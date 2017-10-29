@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$		index.php [L]
+RewriteRule ^([a-z]+)/([0-9]+)\.html$	index.php?c=$1&a=detail&id=$2 [L]
+RewriteRule ^home/([0-9]+)$		index.php?c=home&uid=$1 [L]
+RewriteRule ^wap$			wap.php [L]
